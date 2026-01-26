@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Quiz Platform</title>
+    
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- MathJax Configuration for LaTeX Support -->
+    <script>
+        window.MathJax = {
+            tex: { 
+                inlineMath: [['$', '$'], ['\\(', '\\)']] 
+            },
+            svg: { 
+                fontCache: 'global' 
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Quiz Section -->
+        <div id="quiz-section">
+            <!-- Header -->
+            <div class="header">
+                <h1>📚 Educational Quiz Platform</h1>
+                <p>Test your knowledge with our comprehensive quiz system</p>
+            </div>
+
+            <!-- Stats Container -->
+            <div class="stats-container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-icon timer">⏱️</div>
+                        <div class="stat-content">
+                            <h3>Time Elapsed</h3>
+                            <p id="timer">00:00</p>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon score">✓</div>
+                        <div class="stat-content">
+                            <h3>Current Score</h3>
+                            <p><span id="current-score">0</span> / 10</p>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon progress">📊</div>
+                        <div class="stat-content">
+                            <h3>Progress</h3>
+                            <p id="progress-percentage">0%</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Progress Bar -->
+                <div class="progress-wrapper">
+                    <div class="progress-header">
+                        <span id="progress-text">Question 1 of 10</span>
+                        <span id="progress-percent">10%</span>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-fill" id="progress-bar"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz Card -->
+            <div class="quiz-card">
+                <div class="question-number" id="question-badge">Question 1</div>
+                <h2 class="question-text" id="question">Question goes here</h2>
+                <div class="answers-grid" id="answer-buttons"></div>
+                <button class="next-btn" id="next-btn">Continue →</button>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results-section" id="results-section">
+            <div class="quiz-card">
+                <div class="results-header">
+                    <div class="results-icon">🎓</div>
+                    <h2 class="results-title">Assessment Complete</h2>
+                    <p class="results-message" id="performance-message">Great work!</p>
+                </div>
+
+                <!-- Score Display -->
+                <div class="score-display">
+                    <div class="score-number" id="final-score">0/10</div>
+                    <div class="score-label" id="percentage">Accuracy: 0%</div>
+                    <div class="score-time">
+                        <span>⏱️</span>
+                        <span>Completion Time: <span id="final-time">00:00</span></span>
+                    </div>
+                </div>
+
+                <!-- Metrics Grid -->
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-value" id="correct-count">0</div>
+                        <div class="metric-label">Correct</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value" id="incorrect-count">0</div>
+                        <div class="metric-label">Incorrect</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value" id="accuracy">0%</div>
+                        <div class="metric-label">Accuracy</div>
+                    </div>
+                </div>
+
+                <!-- Review Section -->
+                <div class="review-card">
+                    <div class="review-title">
+                        <span>📋</span>
+                        <span>Answer Review</span>
+                    </div>
+                    <div class="review-list" id="review-list"></div>
+                </div>
+
+                <!-- Restart Button -->
+                <button class="restart-btn" id="restart-btn">
+                    <span>↻</span>
+                    <span>Take Quiz Again</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Developer Footer -->
+    <footer class="developer-footer">
+        <p>Created by <strong>Abdul Muqtadir</strong> <a href="https://github.com/amuqtadir99" target="_blank" rel="noopener noreferrer">@witwebsolutions</a> | <a href="https://www.witweb.com.au" target="_blank" rel="noopener noreferrer">www.witweb.com.au</a></p>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="app.js"></script>
+</body>
+</html>
