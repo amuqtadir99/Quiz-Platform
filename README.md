@@ -1,4 +1,4 @@
-# 📚 Educational Quiz Platform
+# 📚 [Educational Quiz Platform](https://amuqtadir99.github.io/Quiz-Platform/)
 
 A modern, responsive quiz application built with vanilla JavaScript, HTML5, and CSS3. Features STEM-based questions with LaTeX mathematical equation rendering, real-time scoring, timer functionality, and comprehensive performance analytics.
 
@@ -21,7 +21,7 @@ A modern, responsive quiz application built with vanilla JavaScript, HTML5, and 
 
 ## 🚀 Demo
 
-[Live Demo](#) _(Add your deployed link here)_
+[Live Demo](https://amuqtadir99.github.io/Quiz-Platform/) _(Add your deployed link here)_
 
 ## 📁 Project Structure
 
